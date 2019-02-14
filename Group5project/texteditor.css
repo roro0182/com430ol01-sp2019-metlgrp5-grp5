@@ -1,0 +1,44 @@
+
+div#textEditor{
+	margin: 0 auto;
+	width: 750px;
+	height: 300px;
+}
+
+div#theBanner{
+	border-bottom none;
+	padding: 10px;
+	background-color: #0d4f02;
+	color: #eeeeee;
+	border-radius: 8px,8px, 0px,0px;
+}
+
+div#theBanner > button{
+	color: #eeeeee;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+div#theBanner > button:hover{
+	background-color: #006400;
+	transition: all 0.3s linear 0s;
+}
+
+input[type="color"]{
+	border:none;
+	outline: none;
+	background-color: transparent;
+}
+
+div#textArea{
+	border:2px solid #0d4f02;
+	height: 100%;
+	width: 746px;
+}
+
+iframe#theWYSIWYG{
+	height: 100%;
+	width: 100%;
+}

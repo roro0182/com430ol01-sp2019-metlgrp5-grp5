@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MeTL Text Editor</title>
+	<link href="texteditor.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="textEditor"> <!--holds the etire text ediotr box-->
+		<div id="theBanner"> <!-- the banner that hold the icons-->
+			<!--buttons for banner-->
+			<button id="boldButton" title="Bold"><b>B</b></button>
+			<button id="italicButton" title="Italic"><i>I</i></button>
+			<button id="supButton" title="Superscript">X<sup>2</sup></button>
+			<button id="subButton" title="Subscript">X<sub>2</sub></button>
+			<button id="strikeButton" title="Strikethrough"><s>abc</s></button>
+			<button id="orderedListButton" title="Numbered List">(1)</button>
+			<button id="unorderedListButton" title="Bullet List">&bull;</button>
+			<!--font and highlight color popup text boxes of color-->
+			<input type="color" id="fontColorButton" title="Change Font Color">
+			<input type="color" id="highlightButton" title="Highlight Text">
+			<!--font styles-->
+			<select id="fontChanger">
+				<option value="Times New Roman">Times New Roman</option>
+				<option value="Consolas">Consolas</option>
+				<option value="Tahoma">Tahoma</option>
+				<option value="monospace">Monospace</option>
+				<option value="cursive">Cursive</option>
+				<option value="sans-serif">Sans-Serif</option>
+				<option value="Calibri">Calibri</option>
+			</select>
+			<!--Chages the font size of the text and js dropdown of sizeoptions-->
+			<select id="fontSizeChanger">
+				<script>
+					for(var i=1; i<10; i++){
+						document.write("<option value = '"+i+"'>"+i+ "</option>");
+					}
+				</script>
+			</select>
+			<!--link/unlimk undo/redo butons-->
+			<button id="linkButton" title="Create Link">Link</button>
+			<button id="unlinkButton" title="Remove Link">Unlink</button>
+			<button id="undoButton" title="Undo">&larr;</button>
+			<button id="redoButton" title="Redo">&rarr;</button>
+		</div>
+		<div id="textArea"><!--the text/typing area-->
+			<iframe id="theWYSIWYG" name="theWYSIWYG" frameborder="0"></iframe><!--editing area; to display a webpage within a webpage-->
+		</div>
+	</div>
+	<script src="texteditor.js"></script>
+</body>
+</html>
